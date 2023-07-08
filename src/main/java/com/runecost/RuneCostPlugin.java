@@ -96,6 +96,12 @@ public class RuneCostPlugin extends Plugin {
         panel.getShopBox().addActionListener(e -> updateShopOptions());
     }
 
+    @Override
+    protected void shutDown() throws Exception{
+        // panel.removeAll();
+        clientToolbar.removeNavigation(navButton);
+    }
+
     private void calculateRuneCost() {
         String shopName = (String) panel.getShopBox().getSelectedItem();
         ShopStorage selectedShop = getShopByName(shopName);
