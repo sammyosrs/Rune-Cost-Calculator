@@ -54,6 +54,7 @@ public class RuneCostPlugin extends Plugin {
                             {"Chaos Rune", "90", "250"},
                             {"Chaos Rune Pack", "9950", "35"},
                             {"Law Rune", "240", "250"},
+                            {"Soul Rune", "300", "250"}
                             {"Death Rune", "180", "250"},
                             {"Blood Rune", "400", "250"}
                     }),
