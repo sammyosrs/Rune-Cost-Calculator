@@ -42,39 +42,48 @@ public class RuneCostPlugin extends Plugin {
     }
 
     private final ShopStorage[] shops = {
-            new ShopStorage("Lundail", 0.001f,
+            new ShopStorage("Mage Arena", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "250"},
                             {"Chaos Rune Pack", "9950", "3"},
                             {"Death Rune", "180", "250"},
-                            {"Law Rune", "240", "250"}
+                            {"Law Rune", "240", "250"},
+                            {"Nature Rune", "250", "180"}
                     }),
             new ShopStorage("Magic Guild", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "250"},
                             {"Chaos Rune Pack", "9950", "35"},
+                            {"Mind Rune Pack", "40", "330"},
                             {"Law Rune", "240", "250"},
                             {"Soul Rune", "300", "250"},
                             {"Death Rune", "180", "250"},
-                            {"Blood Rune", "400", "250"}
+                            {"Blood Rune", "400", "250"},
+                            {"Nature Rune", "250", "180"}
+
                     }),
-            new ShopStorage("Amlodd", 0.001f,
+            new ShopStorage("Prifddinas", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "250"},
                             {"Chaos Rune Pack", "9950", "35"},
+                            {"Mind Rune Pack", "40", "330"},
+                            {"Cosmic Rune", "250", "50"},
                             {"Law Rune", "240", "250"},
                             {"Death Rune", "180", "250"},
                             {"Blood Rune", "400", "250"},
                             {"Cosmic Rune", "50", "250"},
                             {"Nature Rune", "180", "250"}
                     }),
-            new ShopStorage("Battle Runes", 0.001f,
+            new ShopStorage("Wildy Shop", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "500"},
                             {"Chaos Rune Pack", "9950", "35"},
+                            {"Mind Rune Pack", "40", "330"},
                             {"Law Rune", "240", "250"},
                             {"Death Rune", "180", "500"},
-                            {"Blood Rune", "400", "500"}
+                            {"Blood Rune", "400", "500"},
+                            {"Nature Rune", "250", "180"}
+
                     })
     };
 
@@ -130,6 +139,7 @@ public class RuneCostPlugin extends Plugin {
                     String perWorld = df.format(results[0]);
                     panel.setResultInfo("Results...\n" +
                             "~Total you will spend: " + totalCost + "\n" +
+                            "~Cost Per Rune: " + totalCost / amountWanted + "\n"
                             "~GP Spent Per World: " + perWorld);
                 } else {
                     panel.setResultInfo("You entered too high of a buy per world. The " + shopName + " only has " + itemStock + " in stock");
@@ -139,7 +149,7 @@ public class RuneCostPlugin extends Plugin {
     }
 
     private ShopStorage getShopByName(String shopName) {
-        //Goes through all the shops to check for the correct shot
+        //Goes through all the shops to check for the correct shop
         for (ShopStorage shop : shops) {
             if (shop.getShopName().equals(shopName)) {
                 return shop;
