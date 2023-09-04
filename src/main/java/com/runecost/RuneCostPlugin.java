@@ -139,7 +139,7 @@ public class RuneCostPlugin extends Plugin {
                     String perWorld = df.format(results[0]);
                     panel.setResultInfo("Results...\n" +
                             "~Total you will spend: " + totalCost + "\n" +
-                            "~Cost Per Rune: " + (totalCost / amountWanted) + "\n" + 
+                            "~Cost Per Rune: " + (reuslts[1] / amountWanted) + "\n" +
                             "~GP Spent Per World: " + perWorld);
                 } else {
                     panel.setResultInfo("You entered too high of a buy per world. The " + shopName + " only has " + itemStock + " in stock");
@@ -211,4 +211,3 @@ public class RuneCostPlugin extends Plugin {
         return column;
     }
 }
-
