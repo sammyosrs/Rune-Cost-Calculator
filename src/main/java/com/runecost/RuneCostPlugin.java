@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.runecost;
+package com.runecost;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -139,7 +139,7 @@ public class RuneCostPlugin extends Plugin {
                     String perWorld = df.format(results[0]);
                     panel.setResultInfo("Results...\n" +
                             "~Total you will spend: " + totalCost + "\n" +
-                            "~Cost Per Rune: " + ( results[1] / amountWanted) + "\n" +
+                            "~Total spent per rune: " + results[1] / amountWanted + "\n" +
                             "~GP Spent Per World: " + perWorld);
                 } else {
                     panel.setResultInfo("You entered too high of a buy per world. The " + shopName + " only has " + itemStock + " in stock");
@@ -149,7 +149,7 @@ public class RuneCostPlugin extends Plugin {
     }
 
     private ShopStorage getShopByName(String shopName) {
-        //Goes through all the shops to check for the correct shop
+        //Goes through all the shops to check for the correct shot
         for (ShopStorage shop : shops) {
             if (shop.getShopName().equals(shopName)) {
                 return shop;

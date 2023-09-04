@@ -1,5 +1,6 @@
 package com.runecost;
 
+
 import java.awt.*;
 import javax.inject.Inject;
 import javax.swing.*;
@@ -20,7 +21,7 @@ public class RuneCostPanel extends PluginPanel{
 
     private final Dimension RESULT_SIZE = new Dimension(PluginPanel.PANEL_WIDTH - 5, 100);
     String[] options = {"Select Shop"};
-    String[] shops = {"Lundail", "Magic Guild", "Amlodd", "Battle Runes"};
+    String[] shops = {"Mage Arena", "Magic Guild", "Prifddinas", "Wildy Shop"};
 
     public JTextField getTotalWant() {
         return totalWant;
