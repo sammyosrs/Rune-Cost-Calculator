@@ -46,43 +46,42 @@ public class RuneCostPlugin extends Plugin {
                     new String[][]{
                             {"Chaos Rune", "90", "250"},
                             {"Chaos Rune Pack", "9950", "3"},
+                            {"Mind Rune Pack", "330", "4"},                            
+                            {"Cosmic Rune", "50", "20"},
                             {"Death Rune", "180", "250"},
                             {"Law Rune", "240", "250"},
-                            {"Nature Rune", "250", "180"}
+                            {"Nature Rune", "180", "250"}
+                    
                     }),
             new ShopStorage("Magic Guild", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "250"},
                             {"Chaos Rune Pack", "9950", "35"},
-                            {"Mind Rune Pack", "40", "330"},
+                            {"Mind Rune Pack", "330", "40"},
                             {"Law Rune", "240", "250"},
                             {"Soul Rune", "300", "250"},
                             {"Death Rune", "180", "250"},
                             {"Blood Rune", "400", "250"},
-                            {"Nature Rune", "250", "180"}
+                            {"Nature Rune", "180", "250"}
 
                     }),
             new ShopStorage("Prifddinas", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "250"},
                             {"Chaos Rune Pack", "9950", "35"},
-                            {"Mind Rune Pack", "40", "330"},
-                            {"Cosmic Rune", "250", "50"},
+                            {"Mind Rune Pack", "330", "40"},
                             {"Law Rune", "240", "250"},
                             {"Death Rune", "180", "250"},
                             {"Blood Rune", "400", "250"},
                             {"Cosmic Rune", "50", "250"},
                             {"Nature Rune", "180", "250"}
                     }),
-            new ShopStorage("Wildy Shop", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "500"},
                             {"Chaos Rune Pack", "9950", "35"},
-                            {"Mind Rune Pack", "40", "330"},
-                            {"Law Rune", "240", "250"},
+                            {"Mind Rune Pack", "330", "35"},
                             {"Death Rune", "180", "500"},
                             {"Blood Rune", "400", "500"},
-                            {"Nature Rune", "250", "180"}
 
                     })
     };
