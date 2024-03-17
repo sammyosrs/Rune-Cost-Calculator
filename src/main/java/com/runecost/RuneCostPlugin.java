@@ -76,6 +76,7 @@ public class RuneCostPlugin extends Plugin {
                             {"Cosmic Rune", "50", "250"},
                             {"Nature Rune", "180", "250"}
                     }),
+            new ShopStorage("Mage of Zamorak", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "500"},
                             {"Chaos Rune Pack", "9950", "35"},
