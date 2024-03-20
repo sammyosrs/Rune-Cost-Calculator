@@ -84,6 +84,15 @@ public class RuneCostPlugin extends Plugin {
                             {"Death Rune", "180", "500"},
                             {"Blood Rune", "400", "500"},
 
+                    }),
+            new ShopStorage("The Runic Emporium", 0.001f,
+                    new String[][]{
+                            {"Chaos Rune", "90", "1000"},
+                            {"Chaos Rune Pack", "9950", "30"},
+                            {"Mind Rune Pack", "330", "50"},
+                            {"Death Rune", "180", "500"},
+                            {"Law Rune", "240", "500"},
+                            {"Nature Rune", "180", "500"},
                     })
     };
 
