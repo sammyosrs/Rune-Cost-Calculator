@@ -50,8 +50,7 @@ public class RuneCostPlugin extends Plugin {
                             {"Cosmic Rune", "50", "20"},
                             {"Death Rune", "180", "250"},
                             {"Law Rune", "240", "250"},
-                            {"Nature Rune", "180", "250"}
-                    
+                            {"Nature Rune", "180", "250"},
                     }),
             new ShopStorage("Magic Guild", 0.001f,
                     new String[][]{
@@ -62,9 +61,20 @@ public class RuneCostPlugin extends Plugin {
                             {"Soul Rune", "300", "250"},
                             {"Death Rune", "180", "250"},
                             {"Blood Rune", "400", "250"},
-                            {"Nature Rune", "180", "250"}
-
+                            {"Nature Rune", "180", "250"},
                     }),
+            new ShopStorage("Baba Yaga", 0.001f,
+                    new String[][]{
+                            {"Chaos Rune", "90", "250"},
+                            {"Chaos Rune Pack", "9950", "35"},
+                            {"Mind Rune Pack", "330", "40"},
+                            {"Law Rune", "240", "250"},
+                            {"Soul Rune", "300", "250"},
+                            {"Death Rune", "180", "250"},
+                            {"Blood Rune", "400", "250"},
+                            {"Nature Rune", "180", "250"},
+                            {"Astral Rune", "50", "250"},                            
+                    }),                    
             new ShopStorage("Prifddinas", 0.001f,
                     new String[][]{
                             {"Chaos Rune", "90", "250"},
@@ -74,7 +84,7 @@ public class RuneCostPlugin extends Plugin {
                             {"Death Rune", "180", "250"},
                             {"Blood Rune", "400", "250"},
                             {"Cosmic Rune", "50", "250"},
-                            {"Nature Rune", "180", "250"}
+                            {"Nature Rune", "180", "250"},
                     }),
             new ShopStorage("Mage of Zamorak", 0.001f,
                     new String[][]{
@@ -83,7 +93,6 @@ public class RuneCostPlugin extends Plugin {
                             {"Mind Rune Pack", "330", "35"},
                             {"Death Rune", "180", "500"},
                             {"Blood Rune", "400", "500"},
-
                     }),
             new ShopStorage("The Runic Emporium", 0.001f,
                     new String[][]{
